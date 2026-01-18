@@ -8,8 +8,7 @@ This document outlines the thought process, experimental design, and insights ga
 
 **Objective:** Predict obesity levels (7 classes) based on health and lifestyle features from the UCI Obesity dataset. Beyond basic classification, explore whether the **numeric encoding of categorical target labels** affects model performance.
 
-**Core Hypothesis:** Tree-based models are not invariant to label ordering, and different class label mappings can alter learning behavior — particularly for imbalanced and ordinal classes.
-
+**Core Hypothesis:** Tree-based multiclass implementations are invariant to class identity, but not invariant to label encoding under specific loss formulations, reduction strategies, and implementation details.
 ---
 
 ## 2. 🧹 Data Preprocessing
